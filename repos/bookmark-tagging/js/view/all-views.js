@@ -20,7 +20,7 @@ define(function (require, exports, module) {
                 .when('/rename-tag', {templateUrl: 'js/view/rename-tag.html', controller: 'RenameTagCtrl'})
                 .when('/show-tags', {templateUrl: 'js/view/show-tags.html', controller: 'ShowTagsCtrl'})
                 .when('/actions', {templateUrl: 'js/view/actions.html', controller: 'ActionsCtrl'})
-                .otherwise({redirectTo: '/add'});
+                .otherwise({redirectTo: '/actions'});
         }]);
     }
 
