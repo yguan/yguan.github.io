@@ -1,18 +1,1 @@
-define(function (require, exports, module) {
-
-    exports.create = function(url, callback) {
-        if (!chrome.tabs) {
-            return;
-        }
-        chrome.tabs.create({
-            active: true,
-            url: url
-        }, callback);
-
-    };
-
-    exports.openInNewTab = function (viewUrl, callback) {
-        this.create(location.origin + location.pathname + '#' + viewUrl, callback);
-    };
-});
-
+define(["require","exports","module"],function(e,t,n){t.create=function(e,t){if(!chrome.tabs)return;chrome.tabs.create({active:!0,url:e},t)},t.openInNewTab=function(e,t){this.create(location.origin+location.pathname+"#"+e,t)}});

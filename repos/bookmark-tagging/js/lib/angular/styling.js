@@ -1,18 +1,1 @@
-angular.module('styling', [])
-    .directive('resize', ['$window', function ($window) {
-        return function (scope, element) {
-
-            var w = angular.element($window);
-            scope.getWindowDimensions = function () {
-                return { 'h': w.height(), 'w': w.width() };
-            };
-            scope.$watch(scope.getWindowDimensions, function (newValue, oldValue) {
-                scope.windowHeight = newValue.h;
-                scope.windowWidth = newValue.w;
-            }, true);
-
-            w.bind('resize', function () {
-                scope.$apply();
-            });
-        }
-    }]);
+angular.module("styling",[]).directive("resize",["$window",function(e){return function(t,n){var r=angular.element(e);t.getWindowDimensions=function(){return{h:r.height(),w:r.width()}},t.$watch(t.getWindowDimensions,function(e,n){t.windowHeight=e.h,t.windowWidth=e.w},!0),r.bind("resize",function(){t.$apply()})}}]);
