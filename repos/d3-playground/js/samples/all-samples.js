@@ -1,18 +1,1 @@
-/*jslint nomen: true*/
-/*global define,d3,_ */
-define(function (require, exports, module) {
-    'use strict';
-
-    var vbarsSamples = require('samples/vbars'),
-        scatterplotSamples = require('samples/scatterplot'),
-        hbarsSamples = require('samples/hbars'),
-        bubbleChartSamples = require('samples/bubbleChart');
-
-    exports.run = function () {
-        scatterplotSamples.run();
-        vbarsSamples.run();
-        hbarsSamples.run();
-        bubbleChartSamples.run();
-    };
-});
-
+define(["require","exports","module","samples/vbars","samples/scatterplot","samples/hbars","samples/bubbleChart"],function(e,t,n){var r=e("samples/vbars"),i=e("samples/scatterplot"),s=e("samples/hbars"),o=e("samples/bubbleChart");t.run=function(){i.run(),r.run(),s.run(),o.run()}});

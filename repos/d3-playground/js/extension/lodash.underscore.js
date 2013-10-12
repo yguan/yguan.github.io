@@ -1,8 +1,1 @@
-_.mixin({
-    toLowerCase : function(collection) {
-        return _.map(collection, function(str){ return str.toLowerCase(); });
-    },
-    in: function (searchArray, targetArray) {
-        return (_.intersection(searchArray, targetArray).length === searchArray.length);
-    }
-});
+_.mixin({toLowerCase:function(e){return _.map(e,function(e){return e.toLowerCase()})},"in":function(e,t){return _.intersection(e,t).length===e.length}});

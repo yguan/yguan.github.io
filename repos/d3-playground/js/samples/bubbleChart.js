@@ -1,12 +1,1 @@
-/*jslint nomen: true*/
-/*global define,d3,_ */
-define(function (require, exports, module) {
-    'use strict';
-
-    var bubbleChart = require('component/sample-bubble-chart');
-
-    exports.run = function () {
-        bubbleChart.create();
-    };
-});
-
+define(["require","exports","module","component/sample-bubble-chart"],function(e,t,n){var r=e("component/sample-bubble-chart");t.run=function(){r.create()}});
