@@ -1,0 +1,149 @@
+.view-container {
+    overflow: hidden;
+}
+
+.bookmark-actions {
+    width: 320px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+}
+
+.bookmark-actions .btn-group-vertical {
+    width: 298px;
+    margin: 5px;
+}
+
+.upload-container {
+    margin-top: 5px;
+}
+
+.bookmark-add {
+    width: 650px;
+    min-height: 400px;
+    margin: 10px;
+}
+
+.bookmark-rename {
+    width: 650px;
+    min-height: 335px;
+    margin: 10px;
+}
+
+.bookmark-add input,
+.bookmark-add .bootstrap-tagsinput,
+.bookmark-rename .bootstrap-tagsinput {
+    width: 635px;
+}
+
+.bookmark-search {
+    width: 795px;
+    min-height: 595px;
+    height: 100%;
+    padding: 5px 0 0 5px;
+}
+
+.grid {
+    margin-top: 10px;
+}
+
+.bookmark-search .grid {
+    width: 790px;
+}
+
+.bookmark-search .bootstrap-tagsinput {
+    width: 775px;
+}
+
+.bookmark-search-tab {
+    height: 100%;
+    padding: 5px;
+}
+
+.bookmark-search-tab .bootstrap-tagsinput {
+    width: 800px;
+}
+
+.bookmark-show-tags {
+    height: 100%;
+    min-height: 590px;
+    min-width: 790px;
+    margin: 5px;
+}
+
+.bookmark-show-tags .grid {
+    margin-top: 0;
+}
+
+.bookmark-show-tags .bootstrap-tagsinput{
+    width: 705px;
+}
+
+.btn.align-tagsinput {
+    margin-top: -10px;
+}
+
+.tag-default {
+    background-color: #3a87ad;
+    font-size: 12px;
+}
+
+.typeahead {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.url-icon {
+    background-image: url('link.png');
+    background-repeat: no-repeat;
+    background-position:  center center;
+    padding: 2px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.delete, .delete-cell {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image: url("../img/delete.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.delete-cell {
+    margin: 7px 2px 0 2px;
+}
+
+a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ng-cell {
+    padding: 5px;
+}
+
+.bookmark-count .left {
+    float: left;
+}
+
+.bookmark-count .right {
+    float: right;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}

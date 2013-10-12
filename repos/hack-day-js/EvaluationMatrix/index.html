@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evaluation Matrix</title>
+
+	<link href="../common/css/ui-lightness/jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css">
+	<link href="../common/css/keytable/jquery.dataTables.css" rel="stylesheet" type="text/css">
+	<link href="../common/css/keytable/jquery.dataTables_themeroller.css" rel="stylesheet" type="text/css">
+	<link href="../common/css/keytable/collapsible.css" rel="stylesheet" type="text/css">
+	<link href="../common/css/keytable/demo_table.css" rel="stylesheet" type="text/css">
+	<link href="../common/css/keytable/TableTools.css" rel="stylesheet" type="text/css">
+	<link href="../common/css/keytable/ColVis.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h3 class="collapsible" id="section1">Matrix Settings<span></span></h3>
+<div class="container">
+	<div class="content">
+		<label for="matrixName">Matrix Name</label>
+		<input id="matrixName" type="text" size="30" />
+		<div class="columnList">
+			<input id="addRowBtn" type="button" value="Add Criterion" />&nbsp;
+			<input id="removeRowBtn" type="button" value="Remove Criterion" />&nbsp;
+			<input id="saveBtn" type="button" value="Create Matrix" />
+			<table id="columnTable"></table>
+		</div>
+	</div>
+</div>
+
+<h3 class="collapsible" id="section2">Evaluation Matrix<span></span></h3>
+<div class="container">
+	<div class="content">
+		<input id="addMatrixRowBtn" type="button" value="Add Option" />&nbsp;
+		<input id="removeMatrixRowBtn" type="button" value="Remove Option" />&nbsp;
+		<input id="saveMatrixBtn" type="button" value="Save" />
+		<div class="matrixContainer"></div>
+	</div>
+</div>
+<script src="../common/js/jquery.min.js"></script>
+<script src="../common/js/jquery-ui.min.js"></script>
+<script src="../base.js"></script>
+<script src="../deps.js"></script>
+<script>
+	goog.require('hackday.EvaluationMatrixSetup');
+</script>
+<script>
+	new hackday.EvaluationMatrixSetup().init();
+</script>
+</body>
+</html>

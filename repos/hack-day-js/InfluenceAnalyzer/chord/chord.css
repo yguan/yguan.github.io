@@ -1,0 +1,25 @@
+#chart {
+  font: 10px sans-serif;
+}
+
+.chord path {
+  fill-opacity: .67;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+#labelBlock {
+	float:right;
+	font-size: 11px;
+	line-height: 140%;
+	width: 100px;
+}
+#directInfluenceChart {
+	float:left;
+}
+span.colorblock {
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+	margin-right: 7px;
+}

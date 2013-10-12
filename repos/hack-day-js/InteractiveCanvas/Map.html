@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <canvas id="myCanvas" width="1500" height="1000"></canvas>
+	<script src="../base.js"></script>
+	<script src="../deps.js"></script>
+	<script>
+		goog.require('hackday.interactiveCanvas.map');
+		goog.require('hackday.interactiveCanvas.data.world');
+	</script>
+	<script>
+		new hackday.interactiveCanvas.map({
+				canvasId: 'myCanvas',
+				origin: { x: 200, y: 150 },
+				mapScale: 3,
+				regionColor: '#8c8835',
+				borderColor: 'black',
+				backGroundColor: 'white',
+				delayMsPerRegion: 5
+			})
+			.init()
+			.draw(hackday.interactiveCanvas.data.world);
+	</script>
+</body>
+</html>

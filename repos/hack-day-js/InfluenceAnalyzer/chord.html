@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Influence Power ~ Chord Diagram</title>
+
+	<link href="Chord/chord.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="Chord/d3.js"></script>
+	<script type="text/javascript" src="Chord/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+	<div>Influence Power Chord Diagram</div>
+	<div id="directInfluenceChart"></div>
+	<div id="labelBlock"></div>
+	<script src="halfviz/lib/jstorage.min.js"></script>
+	<script src="Chord/d3.layout.js" type="text/javascript"></script>
+	<script src="halfviz/src/GraphToChord.js" type="text/javascript"></script>
+	<script src="Chord/chord.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		var network = $.jStorage.get('network'),
+			graphToChord = new GraphToChord(network);
+		$('#labelBlock').html(graphToChord.getNameColorLabelsHtml());
+		
+		new ChordDiagram({
+			id: "directInfluenceChart",
+			matrix: graphToChord.directConnectionMatrix(),
+			valuePerTick: 1, // TODO: Should be dynamically set
+			//valuefunction: function (value, valuePerTick) { return value * valuePerTick; },
+			tickUnitLabel: '',
+			arcLabels: graphToChord.arcLabels(),
+			arcLabelWidth: 30,
+			pathColors: graphToChord.pathColors(),
+			width: 600,
+			height: 600
+		}).render();	
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+Build Dependency
+
+[absolut path to HackDay folder]\closure\depswriter.py --root "[absolut path to HackDay folder]" --output_file "[absolut path to HackDay folder]\deps.js"

@@ -1,0 +1,79 @@
+div.chart {
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+.hbar {
+    display: inline-block;
+    background-color: greenyellow;
+    color: black;
+    height: 3em;
+    line-height: 3em;
+    padding-right: 1em;
+    margin-bottom: 2px;
+    text-align: right;
+}
+
+.hbar-label {
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    padding-right: 1em;
+    margin-bottom: 2px;
+    width: 20em;
+    text-align: right;
+}
+
+.teal-vbar {
+    display: inline-block;
+    width: 20px;
+    margin-right: 2px;
+    background-color: teal;
+}
+
+.axis path {
+    fill: none;
+    stroke: black;
+}
+
+.axis {
+    font-size: 8pt;
+    font-family: sans-serif;
+}
+
+.tick {
+    fill: none;
+    stroke: black;
+}
+
+.defaultCircle {
+    stroke: black;
+    stroke-width: 0.5px;
+    fill: RoyalBlue;
+    opacity: 0.6;
+}
+
+svg text {
+    pointer-events: none; /*  behave as if this element isn’t here */
+}
+
+.defaultCircle:hover {
+    fill: orange;
+}
+
+.vbar-label {
+    font-family: 'sans-serif;
+    font-size: 11px;
+}
+
+.teal-fill {
+    fill: teal;
+}
+
+.white-fill {
+    fill: white;
+}
+
+.yellowish-fill {
+    fill: #c8fa28;
+}

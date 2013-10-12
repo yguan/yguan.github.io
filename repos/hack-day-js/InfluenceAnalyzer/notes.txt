@@ -1,0 +1,74 @@
+
+Tim -> Eric {edgeWeight:4}
+Eric -> Jim {edgeWeight:1}
+Jack -> Jim {edgeWeight:1}
+Scott -> Jim {edgeWeight:2}
+Scott -> Mary {edgeWeight:2}
+Scott -> Ben {edgeWeight:2}
+Scott -> Alice {edgeWeight:2}
+Scott -> Doug {edgeWeight:2}
+Alice -> Doug {edgeWeight:2}
+Alice -> Peter {edgeWeight:3}
+Alice -> Josh {edgeWeight:1}
+Andrew -> Jack {edgeWeight:1}
+Peter -> Jack {edgeWeight:3}
+Peter -> Mary {edgeWeight:1}
+Peter -> Amy {edgeWeight:1}
+Eva -> Peter {edgeWeight:4}
+Mary -> Tyler {edgeWeight:5}
+Tyler -> Jake {edgeWeight:3}
+Ben -> Jake {edgeWeight:2}
+Ben -> Jim{edgeWeight:3}
+Eva -> Amy {edgeWeight:3}
+Eva -> Josh {edgeWeight:2}
+Josh -> Jack {edgeWeight:2}
+Tim -> Ben {edgeWeight:2}
+Tyler -> Scott {edgeWeight:1}
+
+Tim  {color:#01aeee}
+Eric {color:green}
+Jim {color:#687172}
+;Jim {color:#687172, viewInflow:true}
+Jack {color:#b01700}
+Scott {color:#db8e3c}
+;Scott {color:#db8e3c, viewOutflow:true}
+Mary {color:#448db7}
+Ben {color:black}
+Alice {color:#fb6e4d}
+Doug {color:#bdd3f1}
+Peter {color:#3d3242}
+Amy {color:#827259}
+Andrew{color:#217c7e}
+Josh{color:#c1d9c5}
+;Josh {color:#c1d9c5, viewOutflow:true}
+Eva{color:#fabbbd}
+Jake{color:#90c468}
+Tyler{color:#e7bf27}
+
+
+
+=======================================
+
+1->2{edgeWeight:80}
+
+"a->b{color: red,edgeWeight:80} c->b
+"{"nodes":{"a":{},"b":{},"c":{}},"edges":{"a":{"b":{"color":"red","edgeWeight":80,"directed":true}},"c":{"b":{"directed":true}}}}"
+
+"{"nodes":{"a":{},"b":{},"c":{}},"edges":{"a":{"b":{"color":"red","edgeWeight":80,"directed":true},"c":{"directed":true}},"c":{"b":{"directed":true}}}}"
+
+=======================================
+
+57 {color:#ffe35f}
+58 {color:#db8e3c}
+62 {color:#b01700}
+68 {color:#c6531e}
+72 {color:#c6531e}
+76 {color:#ffe35f}
+77 {color:#c6531e}
+78 {color:#ffe35f}
+80 {color:#95cde5}
+83 {color:#ffe35f}
+84 {color:#95cde5}
+86 {color:#db8e3c}
+88 {color:#c6531e}
+92 {color:#b01700}
