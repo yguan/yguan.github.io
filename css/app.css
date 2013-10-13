@@ -1,0 +1,168 @@
+body{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: yellowgreen;
+    
+    
+    
+    
+    
+}
+h4 {
+    margin: 0 0 10px 0;
+}
+#menu li {
+    display:inline-block;
+    margin: 10px 2px;
+    background: transparent;
+    border: solid 1px white;
+}
+#menu li.active{
+    background-color:#666;
+    color: #fff;
+}
+#menu li a{
+    text-decoration:none;
+    color: white;
+}
+#menu li.active a:hover{
+    color: #000;
+}
+#menu li:hover{
+    background-color: white;
+}
+#menu li a:hover{
+    color: darkgreen;
+}
+#menu li a,
+#menu li.active a{
+    padding: 9px 18px;
+    display:block;
+}
+#menu li.active a{
+    color: #fff;
+}
+#menu{
+    position:fixed;
+    top:0;
+    right: 50px;
+    height: 40px;
+    z-index: 70;
+    padding: 0;
+    margin:0;
+}
+.section{
+    text-align:center;
+}
+.slide .content {
+    height: 560px;
+    
+    
+    border: solid 1px white;
+    text-align: left;
+    padding: 20px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 140%;
+    overflow-y: auto;
+}
+.content a {
+    text-decoration: none;
+    color: darkblue;
+    text-shadow: none;
+}
+.content a:hover {
+    color: yellow;
+}
+.content ul {
+    margin: 0;
+}
+.content .dim {
+    opacity: 0.5;
+}
+.content.summary {
+    font-size: 20px;
+}
+.content .project {
+    margin-bottom: 30px;
+}
+.school {
+    clear: both;
+}
+.tableCell{
+    padding: 80px 52px 20px 52px;
+}
+.controlArrow {
+    opacity: 0.2;
+}
+.controlArrow:hover {
+    opacity: 1.0;
+}
+.round-corner {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.campus {
+    width: 320px;
+    height: 180px;
+    display: inline-block;
+}
+.uwb {
+    background: url("../img/uwb.jpg");
+}
+.bcc {
+    background: url("../img/bcc.jpg");
+}
+.school {
+    height: 200px;
+}
+.school .description {
+    float: left;
+    width: 400px;
+}
+.circular {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.portrait {
+    width: 150px;
+    height: 150px;
+    background: url("../img/portrait.jpg") no-repeat;
+    float: right;
+}
+.left-of-portrait {
+    width: 80%;
+    float: left;
+}
+.thumbnail:hover,
+.github:hover {
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.github {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../img/github.png") no-repeat;
+}
+::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
