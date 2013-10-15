@@ -1,8 +1,16 @@
 <div class="content">
-    The following charts show the technology stacks that I have used.<br /><br />
+    The following charts show the technology stacks that I have used. Move your mouse over the dots and bars to find surprises. <b>Dots are for duration and bars for individual years.</b><br /><br />
     <div class="chart-section">
-        <h4>Microsoft Stacks</h4>
-        <div id="frameworks"></div>
+        <h4>.NET Frameworks</h4>
+        <div id="dotNet"></div>
+    </div>
+    <div class="chart-section">
+        <h4>.NET Based Frameworks</h4>
+        <div id="dotNetBased"></div>
+    </div>
+    <div class="chart-section">
+        <h4>Database Systems</h4>
+        <div id="database"></div>
     </div>
     <div class="chart-section">
         <h4>Fron-end Stacks</h4>
