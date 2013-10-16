@@ -2,9 +2,14 @@ body {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     font-size: 14px;
     color: #868c92;
+    background-color: #90c984;
 }
 h4 {
     margin: 0 0 10px 0;
+}
+.attention-text {
+    font-weight: bold;
+    color: orange;
 }
 #viewport {
     overflow: hidden;
@@ -111,9 +116,9 @@ h4 {
     opacity: 1.0;
 }
 .round-corner {
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -147,13 +152,17 @@ h4 {
     -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 .portrait {
+    margin: 0 auto;
     width: 150px;
     height: 150px;
     background: url("../img/portrait.jpg") no-repeat;
-    float: right;
 }
 .left-of-portrait {
     width: 80%;
+    float: left;
+}
+.portrait-column {
+    width: 170px;
     float: left;
 }
 .thumbnail {
@@ -184,4 +193,24 @@ h4 {
 }
 .hidden {
     display: none;
+}
+.circle-block {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -border-radius: 50%;
+}
+.click-me {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: solid 2px #5c5c5c;
+    font-size: 14px;
+    
+    
+    
+}
+.click-me:hover {
+    background-color: #6eb7bd;
 }

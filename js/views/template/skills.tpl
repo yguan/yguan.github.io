@@ -1,5 +1,10 @@
 <div class="content">
-    The following charts show the technology stacks that I have used. Move your mouse over the dots and bars to find surprises. <b>Dots are for duration and bars for individual years.</b><br /><br />
+    The following charts show the technology stacks that I have used. <span class="attention-text">Move your mouse over</span> the dots and bars to find surprises.<br /><br />
+    <div class="chart-section">
+        Names on the left y axis are sorted based on the number of years of using the frameworks.<br />
+        A dot represents the number of years using the framework.<br />
+        A bar represents the year of using the framework.
+    </div>
     <div class="chart-section">
         <h4>.NET Frameworks</h4>
         <div id="dotNet"></div>
