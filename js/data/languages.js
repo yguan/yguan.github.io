@@ -1,1 +1,0 @@
-define(["require","exports","module"],function(e,t,n){var r=[{}];t.getData=function(){return r}});
