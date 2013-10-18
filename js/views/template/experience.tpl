@@ -6,7 +6,7 @@
     <span class="dim">Frameworks used:</span> Ext JS 4.2, jasmine, .NET Framework, ASP.NET MVC, machine learning
 
 <p>
-    02/2011 – 01/2013<br />
+    02/2011 - 01/2013<br />
     <b>Software Engineer II</b><br />
     <a href="http://www.daptiv.com/" target="_blank">Daptiv</a> (Seattle, WA)<br />
     <span class="dim">Languages used:</span> CSS, HTML, JavaScript, C#, MS-SQL<br />
@@ -14,7 +14,7 @@
 </p>
 
 <p>
-    05/2009 – 02/2011<br />
+    05/2009 - 02/2011<br />
     <b>.Net Developer</b><br />
     <a href="http://www.apexlearning.com/" target="_blank">Apex Learning</a> (Seattle, WA)<br />
     <span class="dim">Languages used:</span> CSS, HTML, JavaScript, C#, MS-SQL<br />
@@ -22,9 +22,9 @@
 </p>
 
 <p>
-    05/2008 – 04/2009<br />
+    05/2008 - 04/2009<br />
     <b>Software Engineer II</b><br />
-    06/2006 – 04/2008<br />
+    06/2006 - 04/2008<br />
     <b>Software Engineer I</b><br />
     <a href="http://www.apexlearning.com/" target="_blank">Electronic Evidence Discovery</a> (Kirkland, WA - Acquired by <a href="http://dtiglobal.com/" target="_blank">DTI</a> in 09/2010)<br />
     <span class="dim">Languages used:</span> CSS, HTML, JavaScript, C#, MS-SQL<br />
