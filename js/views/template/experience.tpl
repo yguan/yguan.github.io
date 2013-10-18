@@ -26,7 +26,7 @@
     <b>Software Engineer II</b><br />
     06/2006 - 04/2008<br />
     <b>Software Engineer I</b><br />
-    <a href="http://www.apexlearning.com/" target="_blank">Electronic Evidence Discovery</a> (Kirkland, WA - Acquired by <a href="http://dtiglobal.com/" target="_blank">DTI</a> in 09/2010)<br />
+    Electronic Evidence Discovery (Kirkland, WA - Acquired by <a href="http://dtiglobal.com/" target="_blank">DTI</a> in 09/2010)<br />
     <span class="dim">Languages used:</span> CSS, HTML, JavaScript, C#, MS-SQL<br />
     <span class="dim">Frameworks used:</span> jQuery, .NET Framework, ASP.NET, WinForm, ComponentArt, Infragistics, ASP, JSP
 </p>
