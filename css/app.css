@@ -87,9 +87,6 @@ h4 {
 .content.summary {
     font-size: 20px;
 }
-.content .job {
-    margin-bottom: 20px;
-}
 .content .project {
     padding-left: 40px;
     width: 700px;
@@ -119,14 +116,10 @@ h4 {
 .chart-section text {
     font-size: 12px !important;
 }
-.content .category {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.category h4 {
+.book-category h4 {
     margin-bottom: 0;
 }
-.category .thumbnail {
+.book-category .thumbnail {
     margin: 20px 30px 0 0;
     height: 243px;
     width: 153px;
@@ -190,17 +183,37 @@ h4 {
     width: 170px;
     float: left;
 }
-.thumbnail,
-.cv {
+.cv,
+.job,
+.school,
+.project,
+.book-category,
+.chart-section {
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.content .job,
+.content .project,
+.content .book-category,
+.content .chart-section,
+.content .school {
+    margin: 15px 30px 40px 30px;
+    padding: 20px;
+}
+.content .description {
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+.thumbnail {
+    border: solid 1px lightgray;
 }
 .thumbnail:hover,
 .github:hover {
     -moz-box-shadow: 0 0 20px rgba(0, 128, 0, 1);
     -webkit-box-shadow: 0 0 20px rgba(0, 128, 0, 1);
     box-shadow: 0 0 20px rgba(0, 128, 0, 1);
+    border-color: rgba(0, 128, 0, 0.5);
 }
 .github {
     display: inline-block;
