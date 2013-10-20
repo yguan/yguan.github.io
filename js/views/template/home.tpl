@@ -5,6 +5,7 @@
     <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
     <li data-menuanchor="education"><a href="#education">Education</a></li>
     <li data-menuanchor="readingList"><a href="#readingList">Reading List</a></li>
+    <li data-menuanchor="cv"><a href="#cv">CV</a></li>
 </ul>
 
 <div class="section">
@@ -14,4 +15,5 @@
     <div class="slide" data-anchor="experience"></div>
     <div class="slide" data-anchor="education"></div>
     <div class="slide" data-anchor="readingList"></div>
+    <div class="slide" data-anchor="cv"></div>
 </div>
