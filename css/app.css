@@ -341,11 +341,11 @@ h4 {
     margin-top: 0;
 }
 .main .left {
+    border-right: solid 1px lightgray;
     width: 363px;
     padding-right: 30px;
 }
 .main .right {
-    border-left: solid 1px lightgray;
     width: 366px;
     padding-left: 30px;
 }
