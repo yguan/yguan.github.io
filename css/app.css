@@ -189,9 +189,9 @@ h4 {
 .project,
 .book-category,
 .chart-section {
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 .content .job,
 .content .project,
