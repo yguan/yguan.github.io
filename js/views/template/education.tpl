@@ -7,7 +7,7 @@
             Cumulative GPA: 3.95 (max: 4.0)<br />
             Honor: Summa Cum Laude
         </span>
-        <span class="round-corner campus uwb"></span>
+        <span class="campus uwb"></span>
     </div>
 
     <div class="school">
@@ -17,6 +17,6 @@
             Graduation Date: 12/2003<br />
             Cumulative GPA: 3.98 (max: 4.0)
         </span>
-        <span class="round-corner campus bcc"></span>
+        <span class="campus bcc"></span>
     </div>
 </div>
