@@ -33,7 +33,7 @@
             <li>Wrote unit tests, integration tests, and end-to-end tests to test C# code</li>
             <li>Wrote WebDriver tests to test the Web application</li>
             <li>Experimented new technology or implemented innovation ideas on the once-a-month hack day</li>
-            <li>Reviewed most team member’s code</li>
+            <li>Reviewed most team member's code</li>
             <li>Pair programed with team members when needed</li>
         </ul>
     </div>
@@ -71,7 +71,7 @@
             <li>Implemented new features for two WinForm applications</li>
             <li>Wrote automated tests with WatiN for the Web application</li>
             <li>Participated in user design group, code design, and code review</li>
-            <li>Reviewed testers’ test cases, and helped testers to set up some test cases and test data</li>
+            <li>Reviewed testers' test cases, and helped testers to set up some test cases and test data</li>
             <li>Worked under a structured agile process (two-week sprint, sprint demo, sprint retrospective, user stories, pair programming, and test driven development)</li>
         </ul>
 
