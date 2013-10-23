@@ -6,7 +6,7 @@
         <span class="dim">Work product:</span> New features for a web-based e-discovery application<br />
         <span class="dim">Languages used:</span> CSS, HTML, JavaScript, C#, MS-SQL<br />
         <span class="dim">Frameworks used:</span> Ext JS 4.2, jasmine, .NET Framework, ASP.NET MVC, machine learning<br />
-        <span class="dim">Number of engineers:</span> Over 100 people (SDES, SDETS,and testers) across Seattle, Pittsburgh, D.C., and Australia<br />
+        <span class="dim">Number of engineers:</span> Over 100 people (SDES, SDETS, and testers) across Seattle, Pittsburgh, D.C., and Australia<br />
         Responsibilities:
         <ul>
             <li>Participate in story grooming and sprint planning</li>
