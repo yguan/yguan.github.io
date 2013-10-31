@@ -4,6 +4,14 @@
     </div>
 
     <div class="project">
+        <h4>Windows 8 Style Dashboard
+            <a href="https://github.com/yguan/dashboard" target="_blank"><span class="github"></span></a>
+        </h4>
+        I was intrigued by the Windows 8 Dashboard and wondered if I could build something like that. After finding out gridster,the whole thing became so easy. Combining it with a carousel and the basic functionality is here. Bootstrap 3 is nice to be an add-on as well.
+        <p><a href="repos/dashboard/index.html" target="_blank"><img class="thumbnail" src="img/projects/dashboard.png"/></a></p>
+    </div>
+
+    <div class="project">
         <h4>Portfolio Site
             <a href="https://github.com/yguan/portfolio-site" target="_blank"><span class="github"></span></a>
         </h4>
