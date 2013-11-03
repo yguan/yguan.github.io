@@ -4,6 +4,16 @@
     </div>
 
     <div class="project">
+        <h4>Test Anywhere
+            <a href="https://github.com/yguan/test-anywhere" target="_blank"><span class="github"></span></a>
+        </h4>
+        I have been trying to convince people that automated end-to-end testing on a website should be done with JavaScript that can be run on a browser, because it's easier to write, debug, and maintain. And yet, people always have an excuse of not trying it out. So I built this test runner that can be loaded into any website (except https), and run mocha tests on it. Hopefully this will get people thinking about it.
+        <p>Moreover, my <a href="https://github.com/yguan/mocha_webdriver_tests" target="_blank">mocha_webdriver_tests</a> repository contains code that can start a browser session with Webdriver, and then inject test scripts into to the session. However, more work needs to be done to get it to the production level. If you're interested on using or working on the projects, let me know. I will be really happy to see them being used.</p>
+        <p>I also managed to get Ace Editor working as part of the script injection. Ace Editor has really nice feature, but it's code is not ready to be packed by require.js yet. If you want to know how it is being done, let me know.</p>
+        <p><a href="repos/test-anywhere/index.html" target="_blank"><img class="thumbnail" src="img/projects/test-anywhere.png"/></a></p>
+    </div>
+
+    <div class="project">
         <h4>Windows 8 Style Dashboard
             <a href="https://github.com/yguan/dashboard" target="_blank"><span class="github"></span></a>
         </h4>
