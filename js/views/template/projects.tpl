@@ -4,6 +4,14 @@
     </div>
 
     <div class="project">
+        <h4>Flex Note
+            <a href="https://github.com/yguan/notepad" target="_blank"><span class="github"></span></a>
+        </h4>
+        It's a note taking app that allows you to customize the layout the way you want. You can <a href="https://chrome.google.com/webstore/detail/flex-note/ckhmolgiclhlbmndaffmhddfdgbokbhb" target="_blank">download the Chrome App</a> from the Chrome Web Store, or you can run directly from demo site. The only problem with the demo site is that you can lose all your note if you clear your browser's cache data.
+        <p><a href="repos/flexnote/index.html" target="_blank"><img class="thumbnail" src="img/projects/flexnote.png"/></a></p>
+    </div>
+
+    <div class="project">
         <h4>Test Anywhere
             <a href="https://github.com/yguan/test-anywhere" target="_blank"><span class="github"></span></a>
         </h4>
