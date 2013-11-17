@@ -21,7 +21,13 @@
                           ng-click="setNoteToDelete(note, $event)"
                           bs-popover="'js/view/partial/delete-note.html'">
                     </span>
-                    <span class="fa fa-pencil" title="Format Text"></span>
+                    <span class="fa fa-pencil"
+                          data-unique="1"
+                          data-placement="top"
+                          ng-click="showToolbar($event)"
+                          bs-popover="'js/view/partial/editor-toolbar.html'"
+                          ng-mousedown="preventDefault($event)">
+                    </span>
                 </div>
             </gridster-item>
         </gridster>
