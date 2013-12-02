@@ -4,6 +4,22 @@
     </div>
 
     <div class="project">
+        <h4>Decision Making Visualizations
+            <a href="https://github.com/yguan/decisions" target="_blank"><span class="github"></span></a>
+        </h4>
+        It's a collection of interactive visualizations for decision making in life.
+        <p><a href="repos/decisions/index.html" target="_blank"><img class="thumbnail" src="img/projects/decisions.png"/></a></p>
+    </div>
+    
+    <div class="project">
+        <h4>D3 Interactive
+            <a href="https://github.com/yguan/d3-interactive" target="_blank"><span class="github"></span></a>
+        </h4>
+        It's a showcase on how to use model-driven-view approach to build interactive visualization.
+        <p><a href="repos/d3-interactive/index.html" target="_blank"><img class="thumbnail" src="img/projects/d3-interactive.png"/></a></p>
+    </div>
+    
+    <div class="project">
         <h4>Flex Note
             <a href="https://github.com/yguan/notepad" target="_blank"><span class="github"></span></a>
         </h4>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-csp>
 <head>
-    <title>Yong's Portfolio</title>
+    <title>Decision Making Visualizations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/app-min.css?v=120113" rel="stylesheet">
-    <script src ="js/lib/require.js"></script>
-    <script src ="js/app.js?v=120113"></script>
+    <link href="css/app-min.css?v=112913" rel="stylesheet" media="screen">
+    <script src ="js/all-lib.js?v=112913"></script>
+    <script src ="js/app.js?v=112913"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-44790269-1', 'yguan.github.io');
+      ga('create', 'UA-44790269-1', 'auto');
       ga('send', 'pageview');
     </script>
 </head>
 <body>
-    <div id="viewport"></div>
-    <iframe class="hidden" src="repos/bookmark-tagging/#/actions" height="0"></iframe>
+<div ng-view="" id="viewport" class="viewport"></div>
+<a href="https://github.com/yguan/decisions"><img style="position: absolute; top: 0; right: 0; border: 0;" src="img/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 </body>
 </html>
