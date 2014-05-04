@@ -1,7 +1,9 @@
 <div class="content">
-    <div class="chart-section">
-        The following charts show the technology stacks that I have used. <span class="attention-text">Move your mouse over</span> the dots and bars to find surprises.<br /><br />
+    <div class="description">
+        The following charts show the technology stacks that I have used. <span class="attention-text">Move your mouse over</span> the dots and bars to find surprises.
+    </div>
 
+    <div class="chart-section">
         Names on the left y axis are sorted based on the number of years of using the frameworks.<br />
         A dot represents the number of years using the framework.<br />
         A bar represents the year of using the framework.

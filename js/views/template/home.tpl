@@ -1,19 +1,19 @@
 <ul id="menu">
-    <li data-menuanchor="summary" class="active"><a href="#summary">Summary</a></li>
-    <li data-menuanchor="projects"><a href="#projects">Projects</a></li>
-    <li data-menuanchor="skills"><a href="#skills">Skills</a></li>
-    <li data-menuanchor="experience"><a href="#experience">Experience</a></li>
-    <li data-menuanchor="education"><a href="#education">Education</a></li>
-    <li data-menuanchor="readingList"><a href="#readingList">Reading List</a></li>
-    <li data-menuanchor="cv"><a href="#cv">CV</a></li>
+    <li><a href="#summary">Summary</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#readingList">Reading List</a></li>
+    <li><a href="#cv">CV</a></li>
 </ul>
 
-<div class="section">
-    <div class="slide active" data-anchor="summary"></div>
-    <div class="slide" data-anchor="projects"></div>
-    <div class="slide" data-anchor="skills"></div>
-    <div class="slide" data-anchor="experience"></div>
-    <div class="slide" data-anchor="education"></div>
-    <div class="slide" data-anchor="readingList"></div>
-    <div class="slide" data-anchor="cv"></div>
+<div id="stages">
+    <div class="stage" id="summary"></div>
+    <div class="stage" id="projects"></div>
+    <div class="stage" id="skills"></div>
+    <div class="stage" id="experience"></div>
+    <div class="stage" id="education"></div>
+    <div class="stage" id="readingList"></div>
+    <div class="stage" id="cv"></div>
 </div>

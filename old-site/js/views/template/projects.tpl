@@ -1,4 +1,8 @@
 <div class="content">
+    <div class="description">
+        The followings are a list of projects that I can show online.
+    </div>
+
     <div class="project">
         <h4>Decision Making Visualizations
             <a href="https://github.com/yguan/decisions" target="_blank"><span class="github"></span></a>

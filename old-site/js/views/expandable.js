@@ -1,0 +1,1 @@
+define(["exports"],function(e){e.init=function(){$(".expandable-label").click(function(e){var t=$(e.currentTarget).data("expandable");$("."+t).slideToggle("slow")})}});
