@@ -1,5 +1,7 @@
 # How to create a test server to mock a Web server
 
+Date Created: May 4th, 2014
+
 ## Overview
 
 This article proposes a way to mock the Web server so that the client-side code can be tested with a server as close as the real Web server without the slowness of the actual Web server.
