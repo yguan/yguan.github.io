@@ -6,6 +6,7 @@
     <li><a href="#education">Education</a></li>
     <li><a href="#readingList">Reading List</a></li>
     <li><a href="#cv">CV</a></li>
+    <li class="no-action"><a target="_blank" href="../repos/writings">Writings</a></li>
 </ul>
 
 <div id="stages">
