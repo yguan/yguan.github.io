@@ -1,0 +1,1 @@
+define(["exports","lib/doT","lib/text!template/reading-list.tpl","data/reading-list"],function(e,t,n,r){e.render=function(e){var i=$(e),s=t.template(n),o=s(r.getData());i.append(o)}});

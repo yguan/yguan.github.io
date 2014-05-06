@@ -1,6 +1,6 @@
 <div class="content">
     <div class="school">
-        <span class="overview">
+        <span class="description">
             <b>Bachelor's Degree in Computing & Software Systems</b><br />
             <a href="http://www.uwb.edu/" target="_blank">University of Washington</a> (Bothell, WA)<br />
             Graduation Date: 06/2006<br />
@@ -11,7 +11,7 @@
     </div>
 
     <div class="school">
-        <span class="overview">
+        <span class="description">
             <b>Associate Degree in Arts & Sciences</b><br />
             <a href="https://www.bellevuecollege.edu/" target="_blank">Bellevue Community College</a> (Bellevue, WA)<br />
             Graduation Date: 12/2003<br />
