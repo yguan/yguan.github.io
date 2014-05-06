@@ -28,21 +28,23 @@ Even if mocking for unit tests is not a problem, mocking for integration tests i
 
 **Solution**
 
-Create a test server that can handle all the requests made by the client-side code, and set the client-side code to use the test server instead of the actual Web server.
+Create a test server that can handle all the requests made by the client-side code, and configure the client-side code to call the test server instead of the actual Web server.
 
-The test server has the following capabilities:
+The test server acts similar to a cache server of the actual server and has the following capabilities:
 
-1. It stores all the requests maded by the tests in a database.
-2. It stores the response data to each of the request in a database.
-3. It returns the correct response data to requests made by client-side code.
-4. It gets the response data from the actual Web sever periodically by making http request to the Web server with the requests stored in the test server's database, and it will creates a report to show the differences of response data between the data in the database and from the test server.
+1. It stores each http request it receives in a database and use the request as the primary key of a record.
+2. For each request it receives, it will search the database for the response data. If the request doesn't exist, it will make a request to the actual server, and store the reponse data from the actual server to the database with request as a key.
+3. It returns the response data to a request after it finds the data in the database or receives the data from the actual server.
+4. It supports automatic update of response data by making http request to the Web server with the requests stored in the test server's database, and it will creates a report to show the differences of response data between the data in the database and from the test server.
+5. It provides API to insert and update response data for a request.
+5. It provides API to clear all data.
 
 **Benefits**
 
-1. It makes the user acceptance tests run a lot faster.
- 1. A response from the test sever will be really fast because it will be just a lookup in the database to get the correct response data.
-2. When the test server update its response data by sendings requests to the actual server, it will also indirectly test the actual server.
+1. It makes the user acceptance tests run a lot faster. After the database has stored the reponse data, A response from the test sever will be really fast because it will be just a lookup in the database to get the correct response data.
+2. It indirectly test the actual server when the test server update its response data by sendings requests to the actual server.
 3. It eliminates the need to write mocks when writing integration tests for client-side code.
+4. It can implement certain randomized behaviors to mimic sever overload or failure situations.
 
 ## The Implementation
 
