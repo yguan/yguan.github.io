@@ -70,10 +70,10 @@ Here are two sequence diagrams that depict the interactions between components f
 ### Features
 
 * Set up the test server that can handle http requests and interact with database.
-*Create the test server's database.
-*Capture client-side code's http requests and the actual server's responses, and store them in the test sever's database.
-*Enable the test server to update all stored requests' response data by sending requests to the actual Web server.
-*Enable the test server to create report that show the differences of responses data.
+* Create the test server's database.
+* Capture client-side code's http requests and the actual server's responses, and store them in the test sever's database.
+* Enable the test server to update all stored requests' response data by sending requests to the actual Web server.
+* Enable the test server to create report that show the differences of responses data.
 
 
 ## Test Development Process
