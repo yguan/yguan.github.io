@@ -61,15 +61,22 @@ Here are two sequence diagrams that depict the interactions between components f
 
 ## The Implementation
 
-**Set up the test server that can handle http requests and interact with database.**
+### Technology to Use
 
-**Create the test server's database.**
+* Proxy Server - [node-http-proxy](https://github.com/nodejitsu/node-http-proxy)
+* Database - [LevelDB](https://github.com/rvagg/node-levelup#extending)
+* Promise - [rsvp.js](https://github.com/tildeio/rsvp.js) ([tutorial](http://www.html5rocks.com/en/tutorials/es6/promises/))
 
-**Capture client-side code's http requests and the actual server's responses, and store them in the test sever's database.**
+### Features
 
-**Enable the test server to update all stored requests' response data by sending requests to the actual Web server.**
+* Set up the test server that can handle http requests and interact with database.
+*Create the test server's database.
+*Capture client-side code's http requests and the actual server's responses, and store them in the test sever's database.
+*Enable the test server to update all stored requests' response data by sending requests to the actual Web server.
+*Enable the test server to create report that show the differences of responses data.
 
-**Enable the test server to create report that show the differences of responses data.**
+
+## Test Development Process
 
 
 ## Conclusion
