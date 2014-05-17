@@ -80,6 +80,16 @@ Here are two sequence diagrams that depict the interactions between components f
 The source code of the test server that is hosted [here](https://github.com/yguan/test-server). It is simple enough to demonstrate the ideas mentioned in this article, and it can easily be extended for other purpose as well.
 
 
+## Issues
+
+### Cross-domain Requests
+
+If the client-side code is fetched from a domain different from the ajax call made in the client-side, the [same-origin policy](http://en.wikipedia.org/wiki/Same_origin_policy) may kick in and cause the ajax call failed. If the server [enables cross-origin resource sharing](http://enable-cors.org/), this may not be a problem. However, it seems to be really difficult to enable cross-origin resource sharing for localhost in IIS. If you encounter this problem, you can set up the server environment as the following sequence diagram. The browser connects to the test server to get everything, including resource files (js, css, images, and so on). The drawback of this approach is performance, because every single request has to go through the test server.
+
+**A Workflow for bypassing cross-domain requests problem**
+<br/><img src="img/by-pass-cross-origin.png"></img>
+
+
 ## Conclusion
 
 Even though this article focues on building a test server to make UI automation tests run faster. The same test server can be repurposed to act as a recording server, which will allow us easily turn it into a performance/load testing tool. It seem there are a lot of possibilities for the use of the test server idea, and I wish you can spread my article to people you know, and hopefully people will get inspired and create more useful things.
