@@ -10,9 +10,7 @@ define([
 
     var windowFeatures = 'menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes',
         addEventListenerMethod = window.addEventListener ? 'addEventListener' : 'attachEvent',
-        timeoutInMs = {
-            elementExist: 10000
-        };
+        browser;
 
     function waitFor(testFx, onReady, timeoutMessage, timeOutMillis) {
         wait.waitFor(testFx, onReady, function () {
@@ -20,6 +18,9 @@ define([
         }, timeOutMillis)
     }
 
+    /*
+     * Change this function to have use different query
+     */
     function selectElement(selector, win) {
         if (win.$) {
             return win.$(selector);
@@ -39,78 +40,106 @@ define([
     }
 
     function Browser() {
-        this.chain = asyncChain.create();
-        this.popups = [];
-        this._currentWindow;
     }
 
-    Browser.prototype._getCurrentWindow = function () {
-        return this._currentWindow;
-    }
-    Browser.prototype.openWindow = function (url) {
-        var me = this;
-        me.chain.add(function (next) {
-            var win = window.open(url, 'win', windowFeatures);
-            me.popups.push(win);
-            me._currentWindow = win;
-            win[addEventListenerMethod]('load', function () {
-                next();
+    Browser.prototype = {
+        init: function (config) {
+            var me = this;
+
+            config = config || {};
+
+            me.chain = config.chain || asyncChain.create();
+
+            me.defaultTimeoutInMs = config.defaultTimeoutInMs || {
+                elementExist: 1000,
+                implicitWait: 100
+            };
+            return me;
+        },
+        openWindow: function (url) {
+            var me = this;
+            me.chain.add(function (next) {
+                var win = window.open(url, 'win', windowFeatures);
+                me.currentWindow = win;
+                win[addEventListenerMethod]('load', function () {
+                    next();
+                });
             });
-        });
 
-        return me;
-    };
-    Browser.prototype.waitFor = function (testFn, timeoutInMilliseconds) {
-        var me = this,
-            timeoutMessage = 'waitFor condition timeout';
+            return me;
+        },
+        waitFor: function (testFn, timeoutInMilliseconds) {
+            var me = this,
+                timeoutMessage = 'waitFor condition timeout';
 
-        me.chain.add(function (next) {
-            waitFor(function () {
-                return testFn(me._getCurrentWindow());
-            }, next, timeoutMessage, timeoutInMilliseconds || timeoutInMs.elementExist)
-        });
+            me.chain.add(function (next) {
+                waitFor(function () {
+                    return testFn(me.currentWindow);
+                }, next, timeoutMessage, timeoutInMilliseconds || me.defaultTimeoutInMs.elementExist)
+            });
 
-        return me;
-    };
-    Browser.prototype.waitForElementExist = function (selector, timeoutInMilliseconds) {
-        var me = this,
-            timeoutMessage = 'waitForElementExist timeout for ' + selector;
+            return me;
+        },
+        waitForElementExist: function (selector, timeoutInMilliseconds) {
+            var me = this,
+                timeoutMessage = 'waitForElementExist timeout for ' + selector;
 
-        me.chain.add(function (next) {
-            waitFor(function () {
-                return elementExist(selector, me._getCurrentWindow());
-            }, next, timeoutMessage, timeoutInMilliseconds || timeoutInMs.elementExist);
-        });
+            me.chain.add(function (next) {
+                waitFor(function () {
+                    return elementExist(selector, me.currentWindow);
+                }, next, timeoutMessage, timeoutInMilliseconds || me.defaultTimeoutInMs.elementExist);
+            });
 
-        return me;
-    };
-    Browser.prototype.selectElement = function (selector, onElementFound) {
-        var me = this,
-            timeoutMessage = 'waitForElementExist timeout for ' + selector;
+            return me;
+        },
+        waitAndSelectElement: function (selector, onElementFound) {
+            var me = this,
+                timeoutMessage = 'waitForElementExist timeout for ' + selector;
 
-        me.chain.add(function (next) {
-            waitFor(function () {
-                return elementExist(selector, me._getCurrentWindow());
-            }, function () {
-                onElementFound(selectElement(selector, me._getCurrentWindow()), next);
-            }, timeoutMessage, timeoutInMs.elementExist);
-        });
+            me.chain.add(function (next) {
+                waitFor(function () {
+                    return elementExist(selector, me.currentWindow);
+                }, function () {
+                    onElementFound(selectElement(selector, me.currentWindow));
+                    if (next) {
+                        next();
+                    }
+                }, timeoutMessage, me.defaultTimeoutInMs.elementExist);
+            });
 
-        return me;
-    };
-    Browser.prototype.execute = function (fn) {
-        var me = this;
-        me.chain.add(function (next) {
-            fn(me._getCurrentWindow(), next);
-        });
+            return me;
+        },
+        execute: function (fn) {
+            var me = this;
+            me.chain.add(function (next) {
+                fn(me.currentWindow, next);
+            });
 
-        return me;
-    };
-    Browser.prototype.end = function () {
-        this.chain.run();
+            return me;
+        },
+        end: function () {
+            this.chain.run();
+        },
+        getIframe: function (iframeSelector) {
+            var me = this,
+                iframe = new Browser();
+
+            iframe.init({
+                chain: me.chain
+            });
+
+            me.waitAndSelectElement(iframeSelector, function (iframeElement) {
+                iframe.currentWindow = iframeElement[0].contentWindow;
+            });
+
+            return iframe;
+        }
     };
 
     exports.getInstance = function () {
-        return new Browser();
+        if (!browser) {
+            browser = new Browser();
+        }
+        return browser;
     }
 });
