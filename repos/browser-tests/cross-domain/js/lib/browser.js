@@ -51,7 +51,7 @@ define([
             me.chain = config.chain || asyncChain.create();
 
             me.defaultTimeoutInMs = config.defaultTimeoutInMs || {
-                elementExist: 1000,
+                elementExist: 3000,
                 implicitWait: 100
             };
             return me;
