@@ -11,6 +11,7 @@ recorder.init({
     eventsToRecord: eventsToRecord
 });
 window.recorder = recorder;
+module.exports = recorder;
 },{"./code-generator":2,"./events-to-record":4,"./recorder":5}],2:[function(require,module,exports){
 /*jslint nomen: true*/
 /*global $,define,require,module */
