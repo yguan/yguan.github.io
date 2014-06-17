@@ -6,7 +6,7 @@ define([
     'lib/async-chain',
     'lib/wait',
     'lib/ui-recorder'
-], function (exports, asyncChain, wait, uiRecorder) {
+], function (exports, asyncChain, wait) {
     'use strict';
 
     var windowFeatures = 'menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes',
@@ -62,7 +62,7 @@ define([
             me.chain.add(function (next) {
                 var win = window.open(url, 'win', windowFeatures);
                 me.currentWindow = win;
-                uiRecorder.setWindowToListen(win); // now you and record browser events with recorder.record()
+                window.recorder.setWindowToListen(win); // now you and record browser events with recorder.record()
                 win[addEventListenerMethod]('load', function () {
                     next();
                 });
