@@ -1,6 +1,32 @@
 .view-container {
     overflow: hidden;
 }
+label {
+    display: block;
+    margin: 5px;
+}
+.round-field {
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    display: inline-block;
+    height: 32px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+}
+.icon-cell {
+    padding: 2px;
+}
+.icon-delete {
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
 .bookmark-actions {
     width: 320px;
     margin: 5px 0 5px 0;
@@ -28,28 +54,13 @@
 .bookmark-rename .bootstrap-tagsinput {
     width: 635px;
 }
-.bookmark-search {
-    width: 795px;
-    min-height: 595px;
-    height: 100%;
-    padding: 5px 0 0 5px;
-}
 .grid {
     margin-top: 10px;
 }
-.bookmark-search .grid {
-    width: 790px;
-}
 .bookmark-search .bootstrap-tagsinput {
-    width: 775px;
+    width: 788px;
 }
-.bookmark-search-tab {
-    height: 100%;
-    padding: 5px;
-}
-.bookmark-search-tab .bootstrap-tagsinput {
-    width: 800px;
-}
+.bookmark-search,
 .bookmark-show-tags {
     height: 100%;
     min-height: 590px;
@@ -60,7 +71,7 @@
     margin-top: 0;
 }
 .bookmark-show-tags .bootstrap-tagsinput{
-    width: 705px;
+    width: 721px;
 }
 .btn.align-tagsinput {
     margin-top: -10px;
@@ -69,30 +80,13 @@
     background-color: #3a87ad;
     font-size: 12px;
 }
+.tag.label {
+    padding: .2em .6em;
+}
 .typeahead {
     max-height: 300px;
     overflow-y: auto;
     overflow-x: hidden;
-}
-.url-icon {
-    background-image: url('link.png');
-    background-repeat: no-repeat;
-    background-position:  center center;
-    padding: 2px;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-.delete, .delete-cell {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    background-image: url("../img/delete.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-.delete-cell {
-    margin: 7px 2px 0 2px;
 }
 a {
     white-space: nowrap;
@@ -108,14 +102,9 @@ a {
 .bookmark-count .right {
     float: right;
 }
-::-webkit-scrollbar {
-    width: 12px;
+.upload-container input[type="file"] {
+    display: inline-block;
 }
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+.alert {
+    padding: 5px;
 }
