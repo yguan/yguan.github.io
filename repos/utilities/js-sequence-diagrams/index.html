@@ -1,0 +1,54 @@
+<html>
+<head>
+    <style>
+        #sequenceData {
+            width: 400px;
+            height: 600px;
+        }
+        .inline-block {
+            display: inline-block;
+        }
+        .container {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <div class="inline-block">
+    <textarea id="sequenceData"></textarea>
+    </div>
+    <div class="inline-block container">
+        <div id="diagram"></div>
+    </div>
+<div>
+    <script src="jquery.min.js"></script>
+
+    <!--script src="underscore-min.js"></script-->
+    <script src="lodash.min.js"></script>
+    <script src="raphael-min.js"></script>
+    <script src="sequence-diagram-min.js"></script>
+    <script>
+        var isRendering = false,
+            $sequenceData,
+            $diagram;
+        $(document).ready(function(){
+            $sequenceData = $('#sequenceData');
+            $diagram = $('#diagram');
+            $sequenceData.on('keyup', function(e) {
+                if (!isRendering) {
+                    isRendering = true;
+                
+                    setTimeout(function () {
+                        $diagram.empty();
+                        var diagram = Diagram.parse($sequenceData.val());
+                        diagram.drawSVG('diagram', {theme: 'simple'});
+                        isRendering = false;
+                    }, 500);
+                }
+            });
+        });
+    </script>
+</body>        
+</html>
