@@ -3,9 +3,9 @@ define([
     'lib/browser',
     'specs/extjs-tests',
     'specs/jquery-tests'
-], function (chai, Browser, extjsTests, jqueryTests) {
+], function (chai, browser, extjsTests, jqueryTests) {
     chai.should();
-    window.browser = Browser.getInstance().init();
+    window.browser = browser.init();
 
     if (window.runExtjsTests) {
         extjsTests.create();
