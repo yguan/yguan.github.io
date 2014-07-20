@@ -1,0 +1,65 @@
+body {
+  background: #1c1e20 !important;
+}
+
+p {
+    text-align: left;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    text-transform: capitalize;
+}
+
+ol.indent,
+ul.indent {
+    margin: .3em 2em;
+}
+.reveal p.pad-bottom,
+.reveal li {
+    padding-bottom: .2em;
+}
+
+.center {
+    text-align: center;
+}
+
+.reveal {
+    letter-spacing: 0.02em;
+}
+
+.reveal pre {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+pre code {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.reveal .note {
+    display: block;
+    padding: 20px 0;
+}
+
+.reveal .note,
+.reveal .small {
+    font-size: .6em;
+}
+
+.reveal table th {
+    font-weight: bold;
+}
+
+.reveal table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.reveal table th,
+.reveal table td {
+    text-align: left;
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    border-bottom: 1px solid;
+    font-size: 0.8em;
+}
