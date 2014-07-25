@@ -1,5 +1,5 @@
 body {
-  background: #1c1e20 !important;
+    background: #1c1e20 !important;
 }
 
 p {
@@ -10,10 +10,20 @@ p {
     text-transform: capitalize;
 }
 
+.reveal ol,
+.reveal ul {
+    display: block;
+}
+
 ol.indent,
 ul.indent {
     margin: .3em 2em;
 }
+
+.reveal p.pad-top {
+    padding-top: .2em;
+}
+
 .reveal p.pad-bottom,
 .reveal li {
     padding-bottom: .2em;
@@ -31,6 +41,7 @@ ul.indent {
     box-shadow: none;
     margin-bottom: 0;
 }
+
 pre code {
     font-size: 18px;
     margin-top: 20px;

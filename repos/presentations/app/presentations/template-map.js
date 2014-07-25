@@ -8,6 +8,14 @@ define(function (require, exports) {
         'browser-automation': {
             name: 'browser-automation.tpl',
             title: 'In-Browser Automation'
+        },
+        'oscon-2014-experience': {
+            name: 'oscon-2014-experience.tpl',
+            title: 'OSCON 2014 Experience'
+        },
+        'oscon-2014-learning': {
+            name: 'oscon-2014-learning.tpl',
+            title: 'OSCON 2014 Learning'
         }
     };
 
