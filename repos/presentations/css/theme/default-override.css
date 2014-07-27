@@ -1,5 +1,12 @@
 body {
-    background: #1c1e20 !important;
+    background: #363636 !important;
+    /*background: #222222 !important;*/
+    /*background: #55585d !important;*/
+    /*background: #666666 !important;*/
+}
+
+.blue-background {
+    background: #7cafc2 !important;
 }
 
 p {
@@ -34,7 +41,15 @@ ul.indent {
 }
 
 .reveal {
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
+}
+
+.reveal section {
+    font-size: 0.9em;
+}
+
+.reveal section ul {
+    line-height: 1.3em !important;
 }
 
 .reveal pre {
@@ -54,7 +69,7 @@ pre code {
 
 .reveal .note,
 .reveal .small {
-    font-size: .6em;
+    font-size: .7em;
 }
 
 .reveal table th {

@@ -47,7 +47,7 @@
         <ul>
             <li>Good food: lot of meats, salads, fruits, and other things</li>
             <li>Good drinks: beers, cocktails, and wine</li>
-            <li>Nice theme(todo:link to picture)</li>
+            <li><a href="https://www.flickr.com/photos/oreillyconf/sets/72157645848965013" target="_blank">Nice theme</a></li>
         </ul>
     </section>
     <section>

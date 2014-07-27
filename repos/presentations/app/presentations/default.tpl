@@ -46,7 +46,7 @@
         <ul class="indent">
             <li>Inspirational keynotes</li>
             <li>Insightful sessions</li>
-            <li>Introductory sessions</li>
+            <li>Miscellaneous</li>
         </ul>
         <p>To learn more, click <a href="index.html?name=oscon-2014-learning" target="_blank">here</a>.</p>
     </section>
