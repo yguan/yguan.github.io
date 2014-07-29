@@ -208,58 +208,15 @@
     </p>
 </section>
 
-
 <section>
-    <section>
-        <h2><a href="http://www.oscon.com/oscon2014/public/schedule/detail/37736" target="_blank">Apache Spark: A Killer or Savior of Apache Hadoop?</a></h2>
-        <h4>Roman Shaposhnik (Pivotal Inc.)</h4>
-        <p>
-            The session was a good overview of Spark and its differences from Hadoop, but <a href="http://spark-summit.org/2014/agenda">Spark Summit 2014</a> had better talks.
-        </p>
-    </section>
-
-    <section>
-        <h3>Spark's Role in the Big Data Ecosystem</h3>
-        <h4>By Matei Zaharia</h4>
-        <p class="center pad-top">
-            <iframe width="640" height="360" src="//www.youtube.com/embed/e-Ys-2uVxM0?list=PL-x35fyliRwiST9gF7Z8Nu3LgJDFRuwfr" frameborder="0" allowfullscreen></iframe>
-        </p>
-    </section>
-
-    <section>
-        <h3>Spark and the future of big data applications</h3>
-        <h4>By Eric Baldeschwieler</h4>
-        <p class="center pad-top">
-            <iframe width="640" height="360" src="//www.youtube.com/embed/c_i2waZvwOc?list=PL-x35fyliRwiST9gF7Z8Nu3LgJDFRuwfr" frameborder="0" allowfullscreen></iframe>
-        </p>
-    </section>
-
-    <section>
-        <h3>The Future of Spark</h3>
-        <h4>By Patrick Wendell</h4>
-        <p class="center pad-top">
-            <iframe width="640" height="360" src="//www.youtube.com/embed/2iXQnTVgHuw?list=PL-x35fyliRwjCR-gDhk1ekG4jh2ltgKSV" frameborder="0" allowfullscreen></iframe>
-        </p>
-    </section>
-
-    <section>
-        <h3>What's Next for BDAS?</h3>
-        <h4>By Mike Franklin</h4>
-        <p class="center pad-top">
-            <iframe width="640" height="360" src="//www.youtube.com/embed/90ZrS9hVm-w?list=PL-x35fyliRwiST9gF7Z8Nu3LgJDFRuwfr" frameborder="0" allowfullscreen></iframe>
-        </p>
-        <p class="note">
-            This is a talk about <a href="https://amplab.cs.berkeley.edu/software/" target="_blank">Berkeley Data Analytics Stack</a>.
-        </p>
-    </section>
-
-    <section>
-        <h3>Databricks Application Spotlight - Typesafe</h3>
-        <p class="center pad-top">
-            <iframe width="640" height="360" src="//www.youtube.com/embed/a1eWu3AQ9yY?list=PL-x35fyliRwjCR-gDhk1ekG4jh2ltgKSV" frameborder="0" allowfullscreen></iframe>
-        </p>
-    </section>
-
+    <h2><a href="http://www.oscon.com/oscon2014/public/schedule/detail/37736" target="_blank">Apache Spark: A Killer or Savior of Apache Hadoop?</a></h2>
+    <h4>Roman Shaposhnik (Pivotal Inc.)</h4>
+    <p class="pad-bottom">
+        The session was a good overview of Spark and its differences from Hadoop, but <a href="http://spark-summit.org/2014/agenda">Spark Summit 2014</a> had better talks.
+    </p>
+    <p>
+        As I research into Spark, I found a lot materials, and you can find them <a href="index.html?name=hadoop-spark" target="_blank">here</a>.
+    </p>
 </section>
 
 <section>
@@ -336,6 +293,19 @@
 
 <section>
     <h2>Miscellaneous</h2>
+</section>
+
+<section>
+    <h3>Continuous Delivery Workshop</h3>
+    <ul>
+        <li><a href="http://nealford.com/downloads/Continuous_Delivery-1of3-Deployment_Pipelines(Neal_Ford).pdf" target="_blank">Deployment Pipelines</a></li>
+        <li><a href="http://nealford.com/downloads/Continuous_Delivery-2of3-Tests_and_Holistic_Engineering_Practices(Neal_Ford).pdf" target="_blank">Testing & Holistic Engineering Practices</a></li>
+        <li><a href="http://nealford.com/downloads/Continuous_Delivery-3of3-Deployment,Infrastructure,Data(Neal_Ford).pdf" target="_blank">Deployment, Infrastructure, & Data</a></li>
+        <li><a href="http://nealford.com/downloads/Continuous_Delivery_for_Architects(Neal_Ford).pdf" target="_blank">Continuous Delivery for Architects</a></li>
+    </ul>
+    <p class="note">
+        The slides contain a lot of information about continuous delivery.
+    </p>
 </section>
 
 <section>

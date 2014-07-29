@@ -51,6 +51,13 @@
         <p>To learn more, click <a href="index.html?name=oscon-2014-learning" target="_blank">here</a>.</p>
     </section>
 
+    <section>
+        <h2>Hadoop & Spark</h2>
+        <p>
+            This <a href="index.html?name=hadoop-spark" target="_blank">presentation</a> contains learning materials about Apache Spark and why it is better than Hadoop.
+        </p>
+    </section>
+
 </div>
 
 </div>

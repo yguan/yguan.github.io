@@ -16,6 +16,10 @@ define(function (require, exports) {
         'oscon-2014-learning': {
             name: 'oscon-2014-learning.tpl',
             title: 'OSCON 2014 Learning'
+        },
+        'hadoop-spark': {
+            name: 'hadoop-spark.tpl',
+            title: 'Hadoop & Spark'
         }
     };
 
