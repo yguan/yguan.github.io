@@ -20,6 +20,10 @@ define(function (require, exports) {
         'hadoop-spark': {
             name: 'hadoop-spark.tpl',
             title: 'Hadoop & Spark'
+        },
+        'eda-architecture': {
+            name: 'eda-architecture.tpl',
+            title: 'Event-driven Architecture'
         }
     };
 

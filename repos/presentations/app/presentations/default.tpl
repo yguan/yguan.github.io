@@ -58,6 +58,13 @@
         </p>
     </section>
 
+    <section>
+        <h2>Event-driven Architecture</h2>
+        <p>
+            This <a href="index.html?name=eda-architecture" target="_blank">presentation</a> contains learning materials about event-driven architecture.
+        </p>
+    </section>
+
 </div>
 
 </div>
