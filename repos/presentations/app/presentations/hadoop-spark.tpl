@@ -14,6 +14,8 @@
     <ul>
         <li><a href="http://cloudera.com/content/cloudera/en/training/courses/spark-training.html" target="_blank">Cloudera Developer Training for Apache Spark</a> (video)</li>
         <li><a href="http://blog.cloudera.com/blog/2013/11/putting-spark-to-use-fast-in-memory-computing-for-your-big-data-applications/" target="_blank">Putting Spark to Use: Fast In-Memory Computing for Your Big Data Applications</a> (article)</li>
+        <li><a href="http://www.infoq.com/presentations/hadoop-usage-examples" target="_blank">What Can Hadoop Do for You?</a> (video)</li>
+        <li><a href="http://www.infoq.com/presentations/hadoop-yarn" target="_blank">Next Gen Hadoop</a> (video)</li>
     </ul>
 </section>
 

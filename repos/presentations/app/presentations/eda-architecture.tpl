@@ -15,7 +15,7 @@
     </section>
 
     <section>
-        <h3>What SOA do you have?</h3>
+        <h2>What SOA do you have?</h2>
         <p class="center pad-top">
             <a href="http://www.tigerteam.dk/talks/IDDD-What-SOA-do-you-have-talk/" target="_blank"><img src="img/soa-talk-Jeppe-Cramon.png"></img></a>
         </p>
@@ -25,14 +25,13 @@
     </section>
 
     <section>
-        <h3>What SOA do you have? (slides)</h3>
         <p class="center pad-top">
             <iframe src="//www.slideshare.net/slideshow/embed_code/19719399" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
         </p>
     </section>
 
     <section>
-        <h3>Domain Event-Driven Architecture</h3>
+        <h2>Domain Event-Driven Architecture</h2>
         <p class="center pad-top">
             <a href="http://www.infoq.com/presentations/Domain-Event-Driven-Architecture" target="_blank"><img src="img/domain-eda-Stefan-Norberg.png"></img></a>
         </p>
@@ -42,10 +41,55 @@
     </section>
 
     <section>
-        <h3>Domain Event Driven Architecture (slides)</h3>
         <p class="center pad-top">
             <iframe src="//www.slideshare.net/slideshow/embed_code/3395407" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
         </p>
+    </section>
+</section>
+
+<section>
+    <section>
+        <h2>All about CQRS</h2>
+    </section>
+
+    <section>
+        <p class="center pad-top">
+            <iframe src="//player.vimeo.com/video/31645099" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </p>
+        <p class="note">
+            Grey Young was the first one coined the term CQRS, and here is the <a href="http://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf" target="_blank">CQRS Documents</a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Event Store for Web Applications</h2>
+        <p class="center pad-top">
+            <a href="http://www.infoq.com/presentations/event-store-web-apps" target="_blank"><img src="img/Event-Store-Grey-Young.png"></img></a>
+        </p>
+        <p class="note">
+            His talk has some interesting points about choosing different types of databases.
+        </p>
+    </section>
+
+    <section>
+        <h2>Building a Reactive Application</h2>
+        <p class="center pad-top">
+            <a href="http://www.parleys.com/play/53a7d2cce4b0543940d9e55c/" target="_blank"><img src="img/buliding-a-reactive-app-Duncan-DeVore.png"></img></a>
+        </p>
+        <p class="note">
+            It's not the best talk, but it does have a good example and code.
+        </p>
+    </section>
+
+    <section>
+        <h2>Articles</h2>
+        <p>A series of articles that will give you a better sense of what CQRS is.</p>
+        <ul class="indent">
+            <li><a href="http://msdn.microsoft.com/en-us/library/dn568103.aspx" target="_blank">Command and Query Responsibility Segregation (CQRS) Pattern</a></li>
+            <li><a href="http://msdn.microsoft.com/en-us/library/dn589792.aspx" target="_blank">Event Sourcing Pattern</a></li>
+            <li><a href="http://msdn.microsoft.com/en-us/library/jj554200.aspx" target="_blank">CQRS Journey</a></li>
+            <li><a href="http://www.blogcoward.com/archive/2008/11/25/DDD-Lite-and-Data-Access-One-way-of-doing-it.aspx" target="_blank">DDD-lite</a></li>
+        </ul>
     </section>
 </section>
 
@@ -55,7 +99,7 @@
     </section>
 
     <section>
-        <h3>Articles</h3>
+        <h2>Articles</h2>
         <p>A series of articles that will give you a better sense of what microservices are.</p>
         <ul class="indent">
             <li>It’s not (only) the size that matters, it’s (also) how you use them
@@ -74,7 +118,7 @@
     </section>
 
     <section>
-        <h3>Migrating to Microservices</h3>
+        <h2>Migrating to Microservices</h2>
         <p class="center pad-top">
             <a href="http://www.infoq.com/presentations/migration-cloud-native" target="_blank"><img src="img/Microservices-Adrian-Cockcroft.png"></img></a>
         </p>
@@ -90,14 +134,12 @@
     </section>
 
     <section>
-        <h3>Strategic Appplication Development with Domain-Driven Design</h3>
         <p class="center pad-top">
             <iframe src="//www.slideshare.net/slideshow/embed_code/21265921" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
         </p>
     </section>
 
     <section>
-        <h3>From DDD to CQRS</h3>
         <p class="center pad-top">
             <iframe src="//www.slideshare.net/slideshow/embed_code/17752161" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
         </p>
