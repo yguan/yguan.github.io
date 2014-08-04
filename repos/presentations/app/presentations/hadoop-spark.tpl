@@ -3,7 +3,7 @@
 <div class="slides">
 <section>
     <h1>Hadoop & Spark</h1>
-    <h3>A collection of learning materials for Hadoop and Spark</h3>
+    <h3>A collection of learning materials</h3>
     <p class="center">
         <small>By <a href="https://github.com/yguan" target="_blank">Yong Guan</a></small>
     </p>

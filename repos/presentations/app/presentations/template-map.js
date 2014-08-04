@@ -24,6 +24,10 @@ define(function (require, exports) {
         'eda-architecture': {
             name: 'eda-architecture.tpl',
             title: 'Event-driven Architecture'
+        },
+        'messaging-systems': {
+            name: 'messaging-systems.tpl',
+            title: 'Messaging Systems'
         }
     };
 

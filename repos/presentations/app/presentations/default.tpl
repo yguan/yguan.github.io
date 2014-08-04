@@ -65,6 +65,12 @@
         </p>
     </section>
 
+    <section>
+        <h2>Messaging Systems</h2>
+        <p>
+            This <a href="index.html?name=messaging-systems" target="_blank">presentation</a> contains learning materials about messaging systems.
+        </p>
+    </section>
 </div>
 
 </div>
