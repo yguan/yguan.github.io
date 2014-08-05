@@ -19,10 +19,10 @@
         <p>A series of articles that will give you a better sense of messaging patterns.</p>
         <ul class="indent">
             <li>Messaging Patterns in Service-Oriented Architecture <a href="http://msdn.microsoft.com/en-us/library/aa480027.aspx" target="_blank">Part 1</a>, <a href="http://msdn.microsoft.com/en-us/library/aa480061.aspx" target="_blank">Part 2</a></li>
-            <li><a href="http://queues.io/">Links to a list of queueing systems</a></li>
-            <li><a href="http://java.dzone.com/articles/exploring-message-brokers">Exploring Message Brokers: RabbitMQ, Kafka, ActiveMQ, and Kestrel</a></li>
-            <li><a href="http://blog.iron.io/2012/12/top-10-uses-for-message-queue.html">Top 10 Uses For A Message Queue</a></li>
-            <li><a href="http://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying">The Log: What every software engineer should know about real-time data's unifying abstraction</a></li>
+            <li><a href="http://queues.io/" target="_blank">Links to a list of queueing systems</a></li>
+            <li><a href="http://java.dzone.com/articles/exploring-message-brokers" target="_blank">Exploring Message Brokers: RabbitMQ, Kafka, ActiveMQ, and Kestrel</a></li>
+            <li><a href="http://blog.iron.io/2012/12/top-10-uses-for-message-queue.html" target="_blank">Top 10 Uses For A Message Queue</a></li>
+            <li><a href="http://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying" target="_blank">The Log: What every software engineer should know about real-time data's unifying abstraction</a></li>
         </ul>
     </section>
 
