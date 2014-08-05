@@ -22,6 +22,7 @@
             <li><a href="http://queues.io/">Links to a list of queueing systems</a></li>
             <li><a href="http://java.dzone.com/articles/exploring-message-brokers">Exploring Message Brokers: RabbitMQ, Kafka, ActiveMQ, and Kestrel</a></li>
             <li><a href="http://blog.iron.io/2012/12/top-10-uses-for-message-queue.html">Top 10 Uses For A Message Queue</a></li>
+            <li><a href="http://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying">The Log: What every software engineer should know about real-time data's unifying abstraction</a></li>
         </ul>
     </section>
 
