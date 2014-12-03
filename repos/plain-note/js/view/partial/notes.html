@@ -1,0 +1,49 @@
+<div class="main-view">
+    <div class="sidebar-menu">
+        <span class="fa fa-cog" colorpicker class="span2" ng-model="bgColor" title="Change background color"></span>
+        <span class="fa fa-plus" ng-click="addNote()" title="Add a new note"></span>
+        <span class="fa fa-times"
+              data-unique="1"
+              data-placement="right"
+              bs-popover="'js/view/partial/clear-note.html'">
+        </span>
+        <span class="fa fa-upload" ng-click="uploadFilesAsNotes()" title="Upload files as notes"></span>
+        <button class="upload-file-select"
+                ng-file-select=""
+                ng-model="noteFiles"
+                ng-file-change="uploadTextFilesAsNotes(noteFiles)"
+                multiple="true"
+                ng-hide="true">Upload text files as notes
+        </button>
+        <span class="fa fa-download"
+              data-unique="1"
+              data-placement="right"
+              bs-popover="'js/view/partial/export-notes.html'">
+        </span>
+        <span class="sidebar-divider"></span>
+        <span class="fa fa-list"
+              data-unique="1"
+              data-placement="right"
+              bs-popover="'js/view/partial/note-title-list.html'"
+              ng-click="displayNoteTitles()">
+        </span>
+    </div>
+    <div class="notes">
+        <textedit afterTextEditHandler="formatNote()"></textedit>
+        <div class="title"
+             contenteditable="true"
+             ng-model="note.title"
+             ng-keyup="updateTitle()"
+             placeholder="Enter title here">
+        </div>
+        <div class="content"
+             contenteditable="true"
+             placeholder="Enter content here"
+             ng-model="note.content"
+             strip-br="true"
+             select-non-editable="true"
+             ng-click="restoreEditable()"
+             ng-keyup="editNote($event)">
+        </div>
+    </div>
+</div>
