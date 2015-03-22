@@ -1,6 +1,12 @@
 <div class="content">
     <div class="job">
-        01/2013 - Present<br />
+        04/2015 - Present<br />
+        <b>Senior Software Engineer I</b>
+        <br />
+        <a href="http://www.fticonsulting.com/" target="_blank">FTI Consulting</a> (Seattle, WA)
+    </div>
+    <div class="job">
+        01/2013 - 03/2015<br />
         <b>Software Engineer II</b><br />
         <a href="http://www.fticonsulting.com/" target="_blank">FTI Consulting</a> (Seattle, WA)<br />
         <span class="dim">Work product:</span> New features for a web-based e-discovery application<br />
