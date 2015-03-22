@@ -72,7 +72,7 @@
             <div class="right">
                 <div class="competencies">
                     <h2>Competencies</h2>
-                    I'm a full-stack developer with almost 10 years of professional experience. I have been building enterprise web applications with .NET and JavaScript since 2006, from ASP.NET applications to single page applications (with Backbone and Ext JS). And since 2011, I have been writing automated tests for the whole stack, such as, C# unit tests, integration tests, end-to-end service tests, Selenium tests, and JavaScript unit tests.
+                    I'm a full-stack developer with 9 years of professional experience. I have been building enterprise web applications with .NET and JavaScript since 2006, from ASP.NET applications to single page applications (with Backbone and Ext JS). And since 2011, I have been writing automated tests for the whole stack, such as, C# unit tests, integration tests, end-to-end service tests, Selenium tests, and JavaScript unit tests.
 
                  <p>
                      I'm also an active learner of technology. Besides reading a lot of technology books, I have been trying them out by building simple applications with D3.js, Angular.js, paper.js, Node.js, Google Dart, Ruby, and Python, and you can see some of them from my github account (<a href="https://github.com/yguan" target="_blank">github.com/yguan</a>).
