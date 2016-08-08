@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Node Summit 2016</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="img/node-summit-logo.png"/>
+				</section>
+				<section>
+					<h2>Overview</h2>
+					<ul>
+						<li>The Conference</li>
+						<li>Demographics</li>
+						<li>Session Notes</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>The Conference</h2>
+						<ul>
+							<li>It was held in Downtown San Francisco from July 26th to 28th.</li>
+							<li>The first day contained workshops from sponsors.</li>
+							<li>The last two days contained panel discussions, talks, and a couple sponsor workshops.</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/downtown-map.png"/>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Demographics</h2>
+						<ul>
+							<li>Seemed to be around 400 attendees.</li>
+							<li>At least 20% were women.</li>
+							<li>Age distributions were from 20s to 50s.</li>
+							<li>At least 50% were from Bay Area.</li>
+							<li>Quite a few were from Seattle and Portland.</li>
+							<li>Few were from Europe, and they were speakers or sponsors.</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/crowd-1.jpg"/>
+					</section>
+					<section>
+						<img src="img/crowd-2.jpg"/>
+					</section>
+				</section>
+				<section>
+					<h2>Session Notes</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Node @ NASA</h2>
+						<h4>Collin Estes</h4>
+						<ul>
+							<li>NASA is using Node.js to build some of the internal services.</li>
+							<li>For security reason, only node.js core modules are used, modules from npm are prohibited.</li>
+							<li>Use proxy to manage Legacy API migration.</li>
+							<li>To introduce new technology, prototype and demo to show value.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Securing Node.js Applications</h2>
+						<h4>Panel Discussion</h4>
+						<ul>
+							<li>npm is really popular and it's getting attacked quite often.</li>
+							<li>You're responsible for what you use.</li>
+							<li>Input validation are extremely important.</li>
+							<li>express.js has lots of security holes, and it's less secured than hapi.js.</li>
+							<li><a href="http://blog.npmjs.org/post/141702881055/package-install-scripts-vulnerability">Package install scripts vulnerability</a></li>
+							<li><a href="https://davidbruant.github.io/writings/2016/04/08/defeating-the-npm-worm.html">Defeating the npm Worm</a></li>
+							<li><a href="https://blog.risingstack.com/node-js-security-checklist/">Node.js Security Checklist</a></li>
+							<li><a href="https://expressjs.com/en/advanced/best-practice-security.html">Express Production Best Practices</a></li>
+							<li>node security platform command-line tool - <a href="https://github.com/nodesecurity/nsp">nsp</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Addressing the Security Risk in npm Dependencies</h2>
+						<h4>Guy Podjarny (snyk)</h4>
+						<ul>
+							<li>He showed how easy it was to hack a node.js app.</li>
+							<li>Hack to root director from URL with curl.</li>
+							<li>Inject script through link.</li>
+							<li>Use regular expression to cause long run string search task, which blocks the node.js thread.</li>
+							<li>If the code takes in user input to create buffer, it can be hacked by providing a number.</li>
+							<li>Here is the same <a href="https://www.youtube.com/watch?v=pFjNNDjQgJ8">talk</a> from Fluent Conference.</li>
+							<li>snyk has a <a href="https://snyk.io/test">test page</a> that you can test and learn about vulnerabilities.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Node.js Monitoring, Performance, and Security</h2>
+						<h4>Dan Shaw (NodeSource)</h4>
+						<ul>
+							<li>Put nginx in front of node app to manage cache, security, and rate limit.</li>
+							<li>Pass in only the data the function needs, don't pass in the whole object. Otherwise, memory will keep growing until the whole function is done.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>To Err Is Human</h2>
+						<h4>Alex Liu (Netflix)</h4>
+						<ul>
+							<li>The <a href="http://www.slideshare.net/AlexLiu24/to-err-is-human-54101650">slides</a> is really long: 131 pages!</li>
+							<li>It almost contains everthing you should know about error handling in JavaScript.</li>
+							<li>Better error modules: <a href="https://github.com/davepacheco/node-verror">verror</a> and <a href="https://github.com/restify/errors">restify-errors</a>.</li>
+							<li><a href="https://www.joyent.com/node-js/production/design/errors">Error Handling in Node.js</a> from Joyent.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>The Cost of Logging</h2>
+						<h4>Matteo Collina & David Mark Clements (nearForm)</h4>
+						<ul>
+							<li>Logging impacts performance.</li>
+							<li>Disable logging increases throughput.</li>
+							<li>Calling one log function ends up with calling multiple functions.</li>
+							<li><a href="https://github.com/mcollina/pino">pino</a> is the fastest logger.</li>
+							<li>There were quite a few performance tricks mentioned in the talk.</li>
+							<li>Here is the <a href="https://mcollina.github.io/the-cost-of-logging/">slides</a>.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Containers. Microservices. Node.js</h2>
+						<h4>Panel Discussion</h4>
+						<ul>
+							<li>More services lower uptime: 99.99% ^ 100  = 99.0049%</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Microservices with gRPC, Docker, and Kubernetes</h2>
+						<h4>Sandeep Dinesh (Google)</h4>
+						<ul>
+							<li>Kubernetes contains everyting to build microservices:
+								<ul>
+									<li>load balancing</li>
+									<li>service discovery</li>
+									<li>zero downtime deployment</li>
+									<li>no need to SSH to container, use the API to do everything</li>
+								</ul>
+							</li>
+							<li>GRPC allows services to communicate with high performance:
+								<ul>
+									<li><a href="https://developers.google.com/protocol-buffers/docs/overview">Protocol Buffers</a></li>
+									<li><a href="https://http2.github.io/">HTTP/2</a>: bidirectional streaming, flow control, header compression, multiplexing requests over a single TCP connection</li>
+								</ul>
+							</li>
+							<li>Similar <a href="https://www.youtube.com/watch?v=UOIJNygDNlE">talk</a> from last year.</li>
+							<li>Similar <a href="https://speakerdeck.com/thesandlord/building-scalable-microservices-with-kubernetes-grpc-and-containers-api-world-2015">slides</a> from last year.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Building PayPal Into Cross-Domain Web Components</h2>
+						<h4>Daniel Brain (PayPal)</h4>
+						<ul>
+							<li><a href="https://github.com/krakenjs/post-robot">post-robot</a>: makes postMessaging between windows, popups and iframes a lot more deterministic.</li>
+							<li><a href="https://github.com/krakenjs/beaver-logger">beaver-logger</a>: lets you do logging on the client side without worrying about sending hundreds of requests to your server.</li>
+							<li><a href="https://github.com/krakenjs/xcomponent">xcomponent</a>:  builds cross-domain components, in iframes and popup windows.</li>
+							<li>Here is the <a href="https://www.paypal-engineering.com/2016/06/01/open-source-javascript-offerings-from-paypal-checkout/">summary</a>.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Building Your DevOps for Node.js</h2>
+						<h4>Chetan Desai (Intuit)</h4>
+						<ul>
+							<li>Avoid global dependecy and use local dependency for build isolation.</li>
+							<li>Run <a href="https://docs.npmjs.com/cli/shrinkwrap">npm shrinkwrap</a> to lock down dependencies for production use.</li>
+							<li>Run <a href="https://docs.npmjs.com/cli/prune">npm prune --production</a> to reduce the size of node_modules.</li>
+							<li>Never run npm at deployment time.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>You Don’t Know Node</h2>
+						<h4>Azat Mardan (Capital One)</h4>
+						<ul>
+							<li>Contains quite a good summary of what you should know about Node.</li>
+							<li>Here is the <a href="http://webapplog.com/you-dont-know-node/">blog page</a>.</li>
+							<li>Here is the <a href="https://github.com/azat-co/you-dont-know-node/">github page</a>.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>The End</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				width: 1200,
+				height: 875,
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
