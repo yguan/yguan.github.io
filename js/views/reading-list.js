@@ -1,1 +1,1 @@
-define(["exports","lib/doT","lib/text!template/reading-list.tpl","data/reading-list"],function(e,t,n,r){e.render=function(e){var i=$(e),s=t.template(n),o=s(r.getData());i.append(o)}});
+define(["exports","lib/doT","lib/text!template/reading-list.tpl","data/reading-list"],function(t,e,a,i){"use strict";t.render=function(t){var n=$(t),d=e.template(a),l=d(i.getData());n.append(l)}});

@@ -1,1 +1,1 @@
-_.mixin({toLowerCase:function(e){return _.map(e,function(e){return e.toLowerCase()})},"in":function(e,t){return _.intersection(e,t).length===e.length}});
+_.mixin({toLowerCase:function(n){return _.map(n,function(n){return n.toLowerCase()})},in:function(n,t){return _.intersection(n,t).length===n.length}});
